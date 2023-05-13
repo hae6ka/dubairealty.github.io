@@ -82,6 +82,7 @@ $black: #272727;
     margin-top: 30px;
 
     .apartments__puth {
+        margin-left: 20px;
         color: $grey;
         margin-bottom: 75px;
     }
@@ -359,82 +360,6 @@ $black: #272727;
     }
 }
 
-//===================================contact-us==================================
-
-.contact-us {
-    margin-top: 100px;
-    position: absolute;
-    left: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(../i/contact-us-slider.png);
-    width: 100%;
-    height: 400px;
-
-    .contact-us__subtitle {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 160%;
-        color: $black;
-    }
-
-    .contact-us__title {
-        font-weight: 700;
-        font-size: 120px;
-        line-height: 69px;
-        color: $black;
-    }
-
-
-    .contact-us__button {
-        width: 470px;
-        max-width: 90%;
-        height: 60px;
-        display: flex;
-
-        .button__input {
-            width: 67%;
-
-            &::placeholder {
-                padding-left: 20px;
-            }
-        }
-
-        .button__send {
-            background-color: $black;
-            width: 33%;
-            transition: all 0.3s ease-in;
-            display: flex;
-            justify-content: center;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 16px;
-            align-items: center;
-
-            &:hover {
-                transition: all 0.5s cubic-bezier(0.175, 0.885, 0.12, 1.575);
-                width: 76%;
-            }
-        }
-    }
-}
-
-@media(max-width: 768px) {
-    .contact-us {
-        height: 250px !important;
-
-        .contact-us__subtitle {
-            font-size: 12px;
-        }
-
-        .contact-us__title {
-            font-size: 70px;
-        }
-    }
-}
-
 //===================================table==================================
 
 .table {
@@ -496,6 +421,12 @@ $black: #272727;
 @media(max-width: 768px) {
     .table {
         margin-top: 400px;
+    }
+}
+
+@media(max-width: 512px) {
+    .maintable__title {
+        font-size: 10px !important;
     }
 }
 
@@ -601,6 +532,13 @@ $black: #272727;
         .propose__block:not(:last-child) {
             margin-bottom: 50px;
         }
+    }
+}
+
+@media(max-width: 400px) {
+    .propose__block {
+        width: 320px !important;
+        height: 320px !important;
     }
 }
 

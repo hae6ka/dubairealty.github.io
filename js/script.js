@@ -22,6 +22,6 @@ window.addEventListener('resize', function () {
     if (window.innerWidth <= 620) {
         headerMain.innerHTML = '';
     } else {
-        headerMain.innerHTML = '<div class="main__menu"> <a href="" class="menu__link"> buy </a>  <a href="" class="menu__link"> blog </a>  <a href="" class="menu__link"> about </a>  <a href="" class="menu__link"> contact </a> </div>  <div class="main__button"> <a href="" class="button__link"> book a consultation </a> </div>';
+        headerMain.innerHTML = '<div class="main__menu"> <a href="" class="menu__link"> HOME </a>  <a href="" class="menu__link"> SERVICES </a>  <a href="" class="menu__link"> ABOUT </a>  <a href="" class="menu__link"> CONTACT </a> </div>  <div class="main__button"> <a href="" class="button__link"> book a consultation </a> </div>';
     };
 });

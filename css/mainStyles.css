@@ -82,6 +82,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
+  padding-left: 30px;
+  padding-right: 30px;
   margin-top: 30px;
   max-width: 1800px;
   display: flex;
@@ -137,6 +139,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .header {
+    padding-left: 20px;
+    padding-right: 20px;
     overflow: hidden;
     justify-content: space-around;
   }
@@ -270,6 +274,80 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s ease-in;
   }
 }
+.contact-us {
+  margin-top: 100px;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../i/contact-us-slider.png);
+  width: 100%;
+  height: 400px;
+}
+.contact-us .contact-us__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  color: #272727;
+}
+.contact-us .contact-us__title {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 69px;
+  color: #272727;
+}
+.contact-us .contact-us__button {
+  width: 470px;
+  max-width: 90%;
+  height: 60px;
+  display: flex;
+}
+.contact-us .contact-us__button .button__input {
+  width: 67%;
+}
+.contact-us .contact-us__button .button__input::-moz-placeholder {
+  padding-left: 20px;
+}
+.contact-us .contact-us__button .button__input::placeholder {
+  padding-left: 20px;
+}
+.contact-us .contact-us__button .button__send {
+  background-color: #272727;
+  width: 33%;
+  transition: all 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+}
+.contact-us .contact-us__button .button__send:hover {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.12, 1.575);
+  width: 76%;
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    height: 250px !important;
+  }
+  .contact-us .contact-us__subtitle {
+    font-size: 12px;
+  }
+  .contact-us .contact-us__title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 456px) {
+  .contact-us .contact-us__subtitle {
+    font-size: 12px;
+  }
+  .contact-us .contact-us__title {
+    font-size: 50px;
+  }
+}
 .wrapper-menu {
   width: 50px;
   height: 50px;
@@ -344,4 +422,4 @@ h1, h2, h3, h4, h5, h6 {
   .container {
     overflow: hidden;
   }
-}
+}/*# sourceMappingURL=mainStyles.css.map */

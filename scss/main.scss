@@ -47,6 +47,9 @@ $grey: #929292;
     max-width: 1800px;
 
     .latestProjects__texts {
+        padding-left: 30px;
+        padding-right: 20px;
+    
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -75,6 +78,7 @@ $grey: #929292;
     .latestProjects__projects {
         margin-top: 50px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
 
         #first {
@@ -151,6 +155,10 @@ $grey: #929292;
 
 @media(max-width: 768px) {
     .project {
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 40% !important;
         height: 300px !important;
         padding-left: 10px !important;
 
@@ -179,7 +187,12 @@ $grey: #929292;
     }
 }
 
+//===========================INFO==================================
+
 .info {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 100px;
     height: 630px;
     display: flex;
@@ -187,12 +200,14 @@ $grey: #929292;
     flex-direction: column;
 
     .info__expertise {
+        margin-bottom: 20px;
         color: $yellow;
         font-weight: 600;
         font-size: 18px;
     }
 
     .info__title {
+        margin-bottom: 20px;
         font-weight: 700;
         font-size: 70px;
     }
@@ -230,15 +245,18 @@ $grey: #929292;
 //=========================================message============================================
 
 .message {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 310px;
+    width: 80%;
     border: 1px solid $yellow;
 
     .message__text {
+        margin-top: 40px;
+        margin-bottom: 40px;
         max-width: 80%;
         font-weight: 400;
         font-size: 30px;
@@ -270,7 +288,7 @@ $grey: #929292;
     margin-top: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .preview__block {
         width: 45%;
@@ -288,93 +306,22 @@ $grey: #929292;
     }
 }
 
-@media(max-width: 420px) {
+@media(max-width: 650px) {
     .preview {
         flex-direction: column;
     }
 
     .preview__block {
-        width: 100% !important;
-        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80% !important;
+        margin-bottom: 70px;
     }
+}
 
+@media(max-width: 420px) {
     .block__text {
         font-size: 14px !important;
-    }
-}
-
-//===================================contact-us==================================
-
-.contact-us {
-    margin-top: 100px;
-    position: absolute;
-    left: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(../i/contact-us-slider.png);
-    width: 100%;
-    height: 400px;
-
-    .contact-us__subtitle {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 160%;
-        color: $black;
-    }
-
-    .contact-us__title {
-        font-weight: 700;
-        font-size: 120px;
-        line-height: 69px;
-        color: $black;
-    }
-
-    .contact-us__button {
-        width: 470px;
-        max-width: 90%;
-        height: 60px;
-        display: flex;
-
-        .button__input {
-            width: 67%;
-
-            &::placeholder {
-                padding-left: 20px;
-            }
-        }
-
-        .button__send {
-            background-color: $black;
-            width: 33%;
-            transition: all 0.3s ease-in;
-            display: flex;
-            justify-content: center;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 16px;
-            align-items: center;
-
-            &:hover {
-                transition: all 0.5s cubic-bezier(0.175, 0.885, 0.12, 1.575);
-                width: 76%;
-            }
-        }
-    }
-}
-
-@media(max-width: 768px) {
-    .contact-us {
-        height: 250px !important;
-
-        .contact-us__subtitle {
-            font-size: 12px;
-        }
-
-        .contact-us__title {
-            font-size: 70px;
-        }
     }
 }
 
@@ -461,17 +408,12 @@ $grey: #929292;
 
 //===================================reviews==================================
 
-.box {
-    display: flex;
-    justify-content: space-between;
-}
-
 .reviews {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 45%;
+    width: 100%;
     height: 400px;
     border: 1px solid $yellow;
     padding: 50px;
@@ -505,18 +447,11 @@ $grey: #929292;
     }
 }
 
-@media(max-width: 768px) {
-    .box {
-        flex-direction: column;
-    }
-
+@media(max-width: 1200px) {
     .reviews {
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-        // display: flex !important;
-        // flex-direction: column !important;
-        // justify-content: space-around !important;
+        width: 80%;
     }
 }
 
